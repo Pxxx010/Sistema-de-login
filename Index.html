@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="src/Styles/SignInStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="containeer">
+        <form method="#" id="loginForm">
+            <div class="formEmail">
+                <label for="email" class="emailLabel">E-mail:</label>
+                <input type="email" name="email" id="email" autocomplete="false">
+            </div>
+            <div class="formSenha">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" autocomplete="false">
+            </div>
+            <button type="submit" class="btn btn-outline-success mb-3" onclick="run()"> Entrar</button>
+            
+            <button type="button" class="btn btn-outline-primary botao-criar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Criar Conta
+            </button>
+        </form>
+    </div>
+    <div class="modal-body" id="dmodal">
+        <div class="containeer-fluid">
+            <div class="modal-dialog modal-dialog-centered">Teste</div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Criação de Conta</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <h4>Requisitos:</h4>
+            <p>- Utilize email próprio</p>
+            <p>- Utilize senhas com mais de 8 caracteres</p>
+            <p>- Use uma combinação de letras maiúsculas e minúsculas, números e caracteres especiais na senha</p>
+            <p>- Confirme a senha digitada</p>
+            <p>- Preencha todos os campos obrigatórios</p>
+            <p>- Aceite os termos e condições do serviço</p>
+
+            <a href="src/Pages/cadastro.html" class="btn btn-primary">Ir para a tela de cadastro</a>
+
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="module" src="src/Scripts/SignIn.js"></script>
+</body>
+
+</html>
